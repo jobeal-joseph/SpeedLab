@@ -1,0 +1,22 @@
+{
+  "name": "speedlab",
+  "version": "1.0.0",
+  "description": "SpeedLab - Simple typing speed and mouse reaction time tests using Node.js, Express, and EJS.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "typing-test",
+    "reaction-time",
+    "express",
+    "ejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-ejs-layouts": "^2.5.1"
+  }
+}

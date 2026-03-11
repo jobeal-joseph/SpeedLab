@@ -1,0 +1,34 @@
+<section class="page-header">
+  <h1>Mouse Reaction Test</h1>
+  <p>
+    Wait until the box turns green, then click it as fast as you can. If you
+    click too early, the test will restart.
+  </p>
+</section>
+
+<section class="reaction-test">
+  <div class="reaction-instructions" id="reaction-message">
+    Click "Start" and then wait for the box to turn green.
+  </div>
+
+  <div class="reaction-box" id="reaction-box">
+    Wait...
+  </div>
+
+  <div class="reaction-controls">
+    <button id="start-reaction-btn" class="btn primary">Start</button>
+    <button id="retry-reaction-btn" class="btn ghost">Try Again</button>
+  </div>
+
+  <div class="reaction-results" id="reaction-results">
+    <h2>Your Result</h2>
+    <p>
+      Reaction time:
+      <span id="reaction-time-value">-</span>
+      ms
+    </p>
+  </div>
+</section>
+
+<% scripts = ['/js/reaction.js']; %>
+

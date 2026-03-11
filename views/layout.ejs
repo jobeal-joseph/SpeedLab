@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title || 'SpeedLab' %></title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div id="lights"></div>
+    <div class="page">
+      <header class="header">
+        <div class="header-inner">
+          <a href="/" class="brand">SpeedLab</a>
+          <nav class="nav">
+            <a href="/typing">Typing Test</a>
+            <a href="/reaction">Reaction Test</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <%- body %>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>Simple practice tools for speed and reaction.</p>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/postprocessing@6.35.3/build/postprocessing.min.js"></script>
+    <script src="/js/hyperspeed.js"></script>
+
+    <% if (typeof scripts !== 'undefined') { %>
+      <% scripts.forEach(function (src) { %>
+        <script src="<%= src %>"></script>
+      <% }) %>
+    <% } %>
+  </body>
+  </html>
+

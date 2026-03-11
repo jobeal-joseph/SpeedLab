@@ -1,0 +1,32 @@
+<section class="page-header">
+  <h1>Typing Speed Test</h1>
+  <p>
+    Type the paragraph below as quickly and accurately as you can. The timer
+    starts when you begin typing.
+  </p>
+</section>
+
+<section class="typing-test">
+  <div class="typing-paragraph" id="test-paragraph"><%= paragraph %></div>
+
+  <textarea
+    id="typing-input"
+    class="typing-input"
+    placeholder="Start typing here..."
+  ></textarea>
+
+  <div class="typing-controls">
+    <button id="finish-btn" class="btn primary">Finish</button>
+    <button id="restart-btn" class="btn ghost">Restart</button>
+  </div>
+
+  <div class="typing-results" id="typing-results">
+    <h2>Results</h2>
+    <p>WPM: <span id="wpm-value">-</span></p>
+    <p>Accuracy: <span id="accuracy-value">-</span>%</p>
+    <p>Time: <span id="time-value">-</span> seconds</p>
+  </div>
+</section>
+
+<% scripts = ['/js/typing.js']; %>
+
