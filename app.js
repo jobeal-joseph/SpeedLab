@@ -18,7 +18,7 @@ const indexRouter = require('./routes/index');
 app.use('/', indexRouter);
 
 // Port configuration
-const PORT = 3000;
+const PORT = 5000;
 
 app.listen(PORT, () => {
   console.log(`SpeedLab running at http://localhost:${PORT}`);
